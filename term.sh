@@ -1,5 +1,6 @@
 #!/bin/sh
-#exec xterm -rv -fn '-*-bwoolley-*-*-*-*-*-*-*-*-*-*-*-*' -fb '-*-bwoolley-*-*-*-*-*-*-*-*-*-*-*-*'
-cp ~/Xresources.dark ~/.Xresources
+xset fp+ "$(dirname "${0}")"
+fc-cache flush
+cp Xresources.code7 ~/.Xresources
 xrdb -merge ~/.Xresources
-exec xterm -fn '-bwoolley-code7-*-*-*-*-*-*-*-*-*-*-*-*' -fb '-bwoolley-code7sc-*-*-*-*-*-*-*-*-*-*-*-*'
+exec xterm
