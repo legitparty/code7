@@ -1,13 +1,13 @@
 STARTFONT 2.1
-FONT -bwoolley-code7sc-medium-r-normal--7-70-75-75-M-60-iso10646-1
+FONT -bwoolley-code7-bold-r-normal--7-70-75-75-M-60-iso10646-1
 SIZE 7 75 75
 FONTBOUNDINGBOX 6 7 0 -1
 
 STARTPROPERTIES 20
 FONTNAME_REGISTRY ""
 FOUNDRY "bwoolley"
-FAMILY_NAME "code7sc"
-WEIGHT_NAME "medium"
+FAMILY_NAME "code7"
+WEIGHT_NAME "bold"
 SLANT "r"
 SETWIDTH_NAME "normal"
 FONT_VERSION "1"
