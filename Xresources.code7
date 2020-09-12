@@ -6,9 +6,9 @@ XTerm*boldMode: false
 XTerm*alwaysBoldMode: false
 XTerm*allowBoldFonts: true
 
-XTerm*font:        -bwoolley-code7-*
-XTerm*boldFont:    -bwoolley-code7sc-*
-XTerm*utf8Fonts.font:        -bwoolley-code7-*
-XTerm*utf8Fonts.boldFont:    -bwoolley-code7sc-*
+XTerm*font:        -bwoolley-code7-medium-*
+XTerm*boldFont:    -bwoolley-code7-bold-*
+XTerm*utf8Fonts.font:        -bwoolley-code7-medium-*
+XTerm*utf8Fonts.boldFont:    -bwoolley-code7-bold-*
 
 XTerm*internalBorder: 0
