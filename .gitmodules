@@ -1,0 +1,3 @@
+[submodule "fnt"]
+	path = fnt
+	url = git@github.com:legitparty/fnt.git
