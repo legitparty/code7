@@ -6,4 +6,5 @@ ARG font="code7"
 ENV font=${font}
 COPY / /code7
 WORKDIR /code7
+RUN mkdir -p ttf
 RUN bdf2ttf ${font}.bdf --out ttf/${font}.ttf

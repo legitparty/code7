@@ -5,7 +5,7 @@ all: code7.ttf code7sc.ttf code7it.ttf
 %.ttf: %.bdf fontforge
 	docker image rm ttf || true
 	DOCKER_BUILDKIT=1 docker build -f Dockerfile.ttf --build-arg font=${*} --target ttf -t ttf .
-	DOCKER_BUILDKIT=1 docker build -f Dockerfile     --build-arg font=${*} --target export --output type=local,dest=. ttf
+	DOCKER_BUILDKIT=1 docker build -f Dockerfile     --build-arg font=${*} --target export --output type=local,dest=. .
 
 code7_glyphs   := $(wildcard ./fnt/code7/6x7/U+*)
 code7sc_glyphs := $(wildcard ./fnt/code7sc//6x7/U+*)
