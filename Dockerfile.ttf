@@ -1,0 +1,9 @@
+# syntax=docker/dockerfile:experimental
+
+ARG font="code7"
+FROM fontforge as ttf
+ARG font="code7"
+ENV font=${font}
+COPY / /code7
+WORKDIR /code7
+RUN bdf2ttf ${font}.bdf --out ttf/${font}.ttf
