@@ -7,9 +7,9 @@ all: code7.ttf code7sc.ttf code7it.ttf
 	DOCKER_BUILDKIT=1 docker build -f Dockerfile.ttf --build-arg font=${*} --target ttf -t ttf .
 	DOCKER_BUILDKIT=1 docker build -f Dockerfile     --build-arg font=${*} --target export --output type=local,dest=. .
 
-code7_glyphs   := $(wildcard ./fnt/code7/6x7/U+*)
-code7sc_glyphs := $(wildcard ./fnt/code7sc//6x7/U+*)
-code7it_glyphs := $(wildcard ./fnt/code7it//6x7/U+*)
+code7_glyphs   := $(wildcard ./fnt/code7/6x7/*)
+code7sc_glyphs := $(wildcard ./fnt/code7sc//6x7/*)
+code7it_glyphs := $(wildcard ./fnt/code7it//6x7/*)
 
 code7.bdf: ${code7_glyphs}
 	./fnt/src/2bdf.sh "${<D}" > "${@}"
